@@ -5,13 +5,19 @@ interface Props {
 }
 
 const { link, icon } = Astro.props;
+const iconUppercased = icon.charAt(0).toUpperCase() + icon.slice(1);
 ---
 
 <a
   href={link}
+  aria-label={iconUppercased}
   class="text-3xl font-bold flex flex-row items-center transition-all duration-150 hover:opacity-60"
   target="_blank"
   rel="noreferrer noopener"
 >
-  <img src={`/icons/${icon}.svg`} class="mr-2 w-[1em] h-[1em]" />
+  <img
+    src={`/icons/${icon}.svg`}
+    alt={iconUppercased}
+    class="mr-2 w-[1em] h-[1em]"
+  />
 </a>
