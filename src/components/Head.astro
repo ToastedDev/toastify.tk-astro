@@ -9,6 +9,7 @@ const { title = "Home" } = Astro.props;
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
+  <meta name="generator" content={Astro.generator} />
   <title>{title} | Toastify</title>
   <meta property="og:title" content={`${title} | Toastify`} />
   <meta name="description" content="The official website for Toastify." />
