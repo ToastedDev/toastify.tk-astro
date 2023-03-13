@@ -1,0 +1,17 @@
+---
+interface Props {
+  icon: "youtube" | "twitter" | "github" | "discord" | "email";
+  link: string;
+}
+
+const { link, icon } = Astro.props;
+---
+
+<a
+  href={link}
+  class="text-3xl font-bold flex flex-row items-center transition-all duration-150 hover:opacity-60"
+  target="_blank"
+  rel="noreferrer noopener"
+>
+  <img src={`/icons/${icon}.svg`} class="mr-2 w-[1em] h-[1em]" />
+</a>

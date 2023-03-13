@@ -1,0 +1,32 @@
+---
+import Head from "../components/Head.astro";
+import Social from "../components/Social.astro";
+---
+
+<html lang="en">
+  <Head />
+  <body class="bg-gradient-to-b from-black to-[#a67f07]">
+    <main
+      class="w-screen h-screen flex flex-col justify-center items-center text-white"
+    >
+      <div class="flex flex-col items-start justify-center">
+        <h1 class="font-bold text-6xl">Toastify</h1>
+        <p class="mt-1">Front-end and Discord bot developer.</p>
+        <div class="p-2"></div>
+        <div class="flex flex-row">
+          <Social icon="youtube" link="https://youtube.com/@ToastifyDev" />
+          <Social
+            icon="twitter"
+            link="https://twitter.com/ToastifyDev"
+          />
+          <Social
+            icon="github"
+            link="https://github.com/ToastifyDev"
+          />
+          <Social icon="discord" link="/discord" />
+          <Social icon="email" link="mailto:hey@toastify.tk" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
