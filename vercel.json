@@ -1,5 +1,6 @@
 {
   "redirects": [
-    { "source": "/discord", "destination": "https://discord.com/invite/eXY2CxN9Ks" }
+    { "source": "/discord", "destination": "https://discord.com/invite/eXY2CxN9Ks" },
+    { "source": "/links", "destination": "https://links.toastify.tk" }
   ]
 }
